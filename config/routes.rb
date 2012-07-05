@@ -1,4 +1,9 @@
 Scheduler::Application.routes.draw do
+  resources:childcare_provider
+
+
+  # get "childcare_provider/new"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

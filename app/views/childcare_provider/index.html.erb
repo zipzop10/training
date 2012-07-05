@@ -1,0 +1,10 @@
+<h1>All Childproviders</h1>
+
+<ul class="Childproviders">
+  <% @ChildcareProviders.each do |childprovider| %>
+    <li>
+      <%= childprovider.email%>
+      <%= childprovider.name%>
+    </li>
+  <% end %>
+</ul>
