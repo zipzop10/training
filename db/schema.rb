@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120705140744) do
+ActiveRecord::Schema.define(:version => 20120708102654) do
 
   create_table "advertisments", :force => true do |t|
     t.integer  "childcare_provider"
@@ -20,6 +20,14 @@ ActiveRecord::Schema.define(:version => 20120705140744) do
     t.boolean  "published"
     t.datetime "created_at",         :null => false
     t.datetime "updated_at",         :null => false
+  end
+
+  create_table "adverts", :force => true do |t|
+    t.datetime "timedateto"
+    t.datetime "timedatefrom"
+    t.integer  "provider"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
   end
 
   create_table "childcare_providers", :force => true do |t|

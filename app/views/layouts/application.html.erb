@@ -1,14 +1,35 @@
 <!DOCTYPE html>
+
+
 <html>
 <head>
-  <title>Scheduler</title>
+   <title>Childcare scheduler| <%= yield(:title) %></title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
+<%= stylesheet_link_tag "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/base/jquery-ui.css" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
+<!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <%= link_to "Book My Kiddiecare", '#', id: "logo" %>
+          <nav>
+            <ul class="nav pull-right">
+            <li><%= link_to "Advert", '#' %></li>  
+            <li><%= link_to "Booking", '#' %></li> 
+            <li><%= link_to "Help",    '#' %></li>             
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <%= yield %>
+      <%= render 'layouts/footer' %>
+      </div>
+  </body>
 </html>

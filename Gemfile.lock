@@ -31,6 +31,7 @@ GEM
     addressable (2.2.8)
     annotate (2.4.1.beta1)
     arel (3.0.2)
+    bootstrap-sass (2.0.0)
     builder (3.0.0)
     capybara (1.1.2)
       mime-types (>= 1.16)
@@ -59,6 +60,7 @@ GEM
     jquery-rails (2.0.0)
       railties (>= 3.2.0.beta, < 5.0)
       thor (~> 0.14)
+    jquery_datepicker (0.4)
     json (1.7.3)
     libwebsocket (0.1.3)
       addressable
@@ -120,6 +122,9 @@ GEM
       libwebsocket (~> 0.1.3)
       multi_json (~> 1.0)
       rubyzip
+    simple_form (2.0.2)
+      actionpack (~> 3.0)
+      activemodel (~> 3.0)
     sprockets (2.1.3)
       hike (~> 1.2)
       rack (~> 1.0)
@@ -142,12 +147,15 @@ PLATFORMS
 
 DEPENDENCIES
   annotate (~> 2.4.1.beta)
+  bootstrap-sass (= 2.0.0)
   capybara (= 1.1.2)
   coffee-rails (= 3.2.2)
   jquery-rails (= 2.0.0)
+  jquery_datepicker
   pg (= 0.12.2)
   rails (= 3.2.6)
   rspec-rails (= 2.10.0)
   sass-rails (= 3.2.4)
+  simple_form
   sqlite3 (= 1.3.5)
   uglifier (= 1.2.3)

@@ -1,5 +1,12 @@
 Scheduler::Application.routes.draw do
+  get "adverts/new"
+
+  get "adverts/update"
+
+  get "adverts/delete"
+
   resources:childcare_provider
+  resources:adverts
 
 
   # get "childcare_provider/new"
